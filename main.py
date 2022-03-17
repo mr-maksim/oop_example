@@ -3,6 +3,10 @@ class People:
         self.name = name
         self.sure_name = sure_name
 
+    def __str__(self) -> str:
+        message = f'Имя: {self.name}\nФамилия: {self.sure_name}'
+        return message
+
 
 class Mentor(People):
     def __init__(self, name, sure_name):
